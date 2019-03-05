@@ -1,6 +1,6 @@
  <?php
  function pubMqtt($topic,$msg){
-       $APPID= "WaterLevelLinebot"; //enter your appid
+       $APPID= "WaterLevelLinebot/"; //enter your appid
      $KEY = "ZnxJYAoVrZ1JTPr"; //enter your key
     $SECRET = "6Fn4gdajWCzhYo3a7vxzDNEer"; //enter your secret
     $Topic = "$topic"; 
