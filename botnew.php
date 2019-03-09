@@ -29,7 +29,7 @@ if ( sizeof($request_array['events']) > 0 )
     }
    }
    else
-    $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
+    $reply_message = 'ขอโทษค่ะ ฉันไม่รู้จักคำสั่งนี้!';
   
   }
   else
