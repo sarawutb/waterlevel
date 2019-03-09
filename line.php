@@ -26,7 +26,7 @@ function send_LINE($msg){
       echo $result . "\r\n"; 
 }
 
-
+/*
 
 $API_URL = 'https://api.line.me/v2/bot/message/reply';
 $ACCESS_TOKEN = 'W6j0/wKI5kGrpmHJWUjriP8Rxc8k3CwP7izdeCtIi8mNTaaNdb59Y5tLgdGl2bZoqUnwvfK7yYlDFDMI2qey4YaZpZO4z8+y7qp62JuHyn87PZ0qBjSMQ5BPH2NU+ZWSdGKd2dCjsoDMQ8vEACEUPwdB04t89/1O/w1cDnyilFU='; // Access Token ค่าที่เราสร้างขึ้น
@@ -78,6 +78,6 @@ function send_reply_message($url, $post_header, $post_body)
  $result = curl_exec($ch);
  curl_close($ch);
  return $result;
-}
+}*/
 ?>
 
