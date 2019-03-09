@@ -26,10 +26,10 @@ function send_LINE($msg){
       echo $result . "\r\n"; 
 }
 */
-function send_LINE($msg){
+function send_LINE($reply_message){
 $messages = [
         'type' => 'text',
-        'text' => $msg
+        'text' => $reply_message
         //'text' => $text
       ];
 
