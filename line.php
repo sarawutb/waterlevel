@@ -25,8 +25,20 @@ function send_LINE($msg){
       curl_close($ch);
       echo $result . "\r\n"; 
 }*/
+ $messages = [
+        'type' => 'text',
+        'text' => $msg
+        //'text' => $text
+      ];
+      // Make a POST Request to Messaging API to reply to sender
+      $API_URL = 'https://api.line.me/v2/bot/message/reply';
+      $data = [
+        'to' => 'U75a113bb4a54bf53f9d6abfea0cd844f',
+        'messages' => [$messages],
+      ];
 
-$API_URL = 'https://api.line.me/v2/bot/message/reply';
+
+//$API_URL = 'https://api.line.me/v2/bot/message/reply';
 $ACCESS_TOKEN = 'W6j0/wKI5kGrpmHJWUjriP8Rxc8k3CwP7izdeCtIi8mNTaaNdb59Y5tLgdGl2bZoqUnwvfK7yYlDFDMI2qey4YaZpZO4z8+y7qp62JuHyn87PZ0qBjSMQ5BPH2NU+ZWSdGKd2dCjsoDMQ8vEACEUPwdB04t89/1O/w1cDnyilFU='; // Access Token ค่าที่เราสร้างขึ้น
 $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
 $request = file_get_contents('php://input');   // Get request content
