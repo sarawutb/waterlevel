@@ -46,6 +46,7 @@ $text = "Test";
 getMqttfromlineMsg($Topic,$text);
 
 echo "OK3";
+echo "$msg";
 
 
 ?>
