@@ -20,7 +20,7 @@ if ( sizeof($request_array['events']) > 0 )
    if( $event['message']['type'] == 'text' )
    {
     $text = $event['message']['text'];
-    $reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
+   // $reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
     if ($text == 'เปิด'){
        $reply_message = 'เปิดแล้วจ้า';
     }
@@ -30,7 +30,6 @@ if ( sizeof($request_array['events']) > 0 )
    }
    else
     $reply_message = 'ขอโทษค่ะ ฉันไม่รู้จักคำสั่งนี้!';
-  
   }
   else
    $reply_message = 'ระบบได้รับ Event '.ucfirst($event['type']).' ของคุณแล้ว';
