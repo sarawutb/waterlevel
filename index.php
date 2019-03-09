@@ -1,2 +1,2 @@
 <?php
-echo "Hello LINE ติดแล้ว";
+echo "Hello LINE  ผ่าน";
