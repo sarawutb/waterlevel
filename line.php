@@ -26,7 +26,6 @@ function send_LINE($msg){
       echo $result . "\r\n"; 
 }
 */
-function send_LINE($msg){
 
 
 
@@ -88,6 +87,6 @@ function send_reply_message($url, $post_header, $post_body)
  return $result;
 }
  
- }
+ 
 ?>
 
