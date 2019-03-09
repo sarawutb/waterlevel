@@ -27,11 +27,11 @@ function send_LINE($msg){
 }
 */
 function send_LINE($msg){
-$messages = [
-        'type' => 'text',
-        'text' => $msg
+//$messages = [
+ //       'type' => 'text',
+  //      'text' => $msg
         //'text' => $text
-      ];
+  //    ];
 
 
 $API_URL = 'https://api.line.me/v2/bot/message/reply';
@@ -64,8 +64,8 @@ if ( sizeof($request_array['events']) > 0 )
    //$reply_message = iconv("tis-620","utf-8",$reply_message);
    $data = [
     'replyToken' => $reply_token,
-    //'messages' => [['type' => 'text', 'text' => $reply_message]]
-    'messages' =>[$messages]
+    'messages' => [['type' => 'text', 'text' => $reply_message]]
+    //'messages' =>[$messages]
    ];
    $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
    $send_result = send_reply_message($API_URL, $POST_HEADER, $post_body);
