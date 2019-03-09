@@ -5,7 +5,7 @@
 //
 
 //
-/*
+
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -42,7 +42,7 @@ if (!is_null($events['events'])) {
 $Topic = "NodeMCU1" ;
 $text = "Test";
 getMqttfromlineMsg($Topic,$text);
-*/
+
 echo "OK3";
 
 ?>
