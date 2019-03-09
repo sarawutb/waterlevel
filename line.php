@@ -26,12 +26,8 @@ function send_LINE($msg){
       echo $result . "\r\n"; 
 }
 */
-function send_LINE($reply_message){
-$messages = [
-        'type' => 'text',
-        'text' => $reply_message
-        //'text' => $text
-      ];
+function send_LINE($msg){
+
 
 
 $API_URL = 'https://api.line.me/v2/bot/message/reply';
@@ -60,6 +56,11 @@ if ( sizeof($request_array['events']) > 0 )
    $reply_message = 'ระบบได้รับ Event '.ucfirst($event['type']).' ของคุณแล้ว';
  
   if( strlen($reply_message) > 0 )
+   $messages = [
+        'type' => 'text',
+        'text' => $reply_message
+        //'text' => $text
+      ];
   {
    //$reply_message = iconv("tis-620","utf-8",$reply_message);
    $data = [
