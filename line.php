@@ -1,5 +1,5 @@
 <?php
-/*
+
 function send_LINE($msg){
  $access_token = 'W6j0/wKI5kGrpmHJWUjriP8Rxc8k3CwP7izdeCtIi8mNTaaNdb59Y5tLgdGl2bZoqUnwvfK7yYlDFDMI2qey4YaZpZO4z8+y7qp62JuHyn87PZ0qBjSMQ5BPH2NU+ZWSdGKd2dCjsoDMQ8vEACEUPwdB04t89/1O/w1cDnyilFU='; 
   $messages = [
@@ -25,8 +25,8 @@ function send_LINE($msg){
       curl_close($ch);
       echo $result . "\r\n"; 
 }
-*/
 
+/*
 function send_LINE($msg){
 
 $API_URL = 'https://api.line.me/v2/bot/message/reply';
@@ -87,6 +87,6 @@ function send_reply_message($url, $post_header, $post_body)
  return $result;
 }
  
-}
+}*/
 ?>
 
