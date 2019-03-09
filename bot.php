@@ -1,6 +1,6 @@
 <?php
  require("pub.php");
- require("line.php");
+ //require("line.php");
  require("botnew.php");
 
 //
