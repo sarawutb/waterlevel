@@ -1,6 +1,7 @@
 <?php
  require("pub.php");
  require("line.php");
+ require("botnew.php");
 
 //
 
@@ -46,7 +47,4 @@ $text = "Test";
 getMqttfromlineMsg($Topic,$text);
 
 echo "OK3";
-echo "$msg";
-
-
 ?>
