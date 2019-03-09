@@ -21,6 +21,12 @@ if ( sizeof($request_array['events']) > 0 )
    {
     $text = $event['message']['text'];
     $reply_message = 'ระบบได้รับข้อความ ('.$text.') ของคุณแล้ว';
+    if ($text == 'เปิด'){
+       $reply_message = 'เปิดแล้วจ้า';
+    }
+    else if($text == 'ปิด'){
+     $reply_message = 'ปิดแล้วจ้า';
+    }
    }
    else
     $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
