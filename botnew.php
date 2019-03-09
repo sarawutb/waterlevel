@@ -27,9 +27,10 @@ if ( sizeof($request_array['events']) > 0 )
     else if($text == 'ปิด'){
      $reply_message = 'ปิดแล้วจ้า';
     }
+    else $reply_message = 'ขอโทษค่ะ ฉันไม่รู้จักคำสั่งนี้!';
    }
    else
-    $reply_message = 'ขอโทษค่ะ ฉันไม่รู้จักคำสั่งนี้!';
+    $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
   }
   else
    $reply_message = 'ระบบได้รับ Event '.ucfirst($event['type']).' ของคุณแล้ว';
