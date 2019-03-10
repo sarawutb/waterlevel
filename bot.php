@@ -22,6 +22,12 @@ if (!is_null($events['ESP'])) {
 	}
 	
 */
+$msg = 'No';
+send_LINE($msg)
+{
+	echo "OK Netpie !!!!!!";
+}
+
 if (!is_null($events['events'])) {
 	echo "line bot";
 	// Loop through each event
