@@ -24,9 +24,9 @@ if (!is_null($events['ESP'])) {
 */
 
 if (!is_null($events['events'])) {
-	send_LINE($events);
+	//send_LINE($events);
 	
-	echo "line bot";
+	//echo "line bot";
 	// Loop through each event
 	foreach ($events['events'] as $event) {
 		// Reply only when message sent is in 'text' format
@@ -44,6 +44,7 @@ if (!is_null($events['events'])) {
 			
 		}
 	}
+	send_LINE($replyToken);
 }
 //$Topic = "NodeMCU1" ;
 //$text = "Test";
