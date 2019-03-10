@@ -1,5 +1,5 @@
 <?php
-function send_LINE(msg)
+function send_LINE($msg)
 {
     echo "  Finish";
 }
