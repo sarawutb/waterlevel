@@ -11,7 +11,7 @@
 $content = file_get_contents('php://input');
 // Parse JSON
 
-$events = json_decode($content, true);
+$events = 'test';
 // Validate parsed JSON data
 /*
 if (!is_null($events['ESP'])) {
@@ -22,13 +22,10 @@ if (!is_null($events['ESP'])) {
 	}
 	
 */
-$msg = 'No';
-send_LINE($msg)
-{
-	echo "OK Netpie !!!!!!";
-}
 
 if (!is_null($events['events'])) {
+	send_LINE($events);
+	
 	echo "line bot";
 	// Loop through each event
 	foreach ($events['events'] as $event) {
