@@ -44,7 +44,7 @@ if (!is_null($events['events'])) {
 			
 		}
 	}
-	send_LINE($replyToken);
+	//send_LINE($replyToken);
 }
 //$Topic = "NodeMCU1" ;
 //$text = "Test";
