@@ -1,7 +1,7 @@
 
 <?php
  require("pub.php");
- require("botnew.php");
+
 // Get POST body content
 $content = file_get_contents('php://input');
 // Parse JSON
@@ -27,7 +27,7 @@ if (!is_null($events['events'])) {
 			$Topic = "NodeMCU1" ;
 			getMqttfromlineMsg($Topic,$text);
 			   
-			
+		 require("botnew.php");	
 		}
 	}
 }
