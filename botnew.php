@@ -26,18 +26,20 @@ if ( sizeof($request_array['events']) > 0 )
        $reply_message = 'เปิดแล้วจ้า';
     }
     else if($text == 'ปิด'){
-     $reply_message = 'ปิดแล้วจ้า';
+     $reply_message = 'ปิดแล้วจ้า!';
     }
-    $temp = rand(1,3);
-            if($temp == 1){
-               $reply_message = 'ขอโทษค่ะ ฉันไม่รู้จักคำสั่งนี้!'
-            }
-            else if($temp == 2){
-               $reply_message = 'โปรดใช้คำสั่งใหม่ค่ะ!';
-            }
-            else if($temp == 3){
-               $reply_message = 'ลองใหม่อีกครั้ง!';
-            }
+    else {
+      $temp = rand(1,3);
+      if($temp == 1){
+         $reply_message = 'ขอโทษค่ะ ฉันไม่รู้จักคำสั่งนี้!'
+      }
+      else if($temp == 2){
+         $reply_message = 'โปรดใช้คำสั่งใหม่ค่ะ!';
+      }
+      else if($temp == 3){
+         $reply_message = 'ลองใหม่อีกครั้ง!';
+      }
+    }
    }
    else
     $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
