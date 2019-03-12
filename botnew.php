@@ -29,16 +29,7 @@ if ( sizeof($request_array['events']) > 0 )
      $reply_message = 'ปิดแล้วจ้า!';
     }
     else {
-      $temp = rand(1,3);
-      if($temp == 1){
-         $reply_message = 'ขอโทษค่ะ ฉันไม่รู้จักคำสั่งนี้!'
-      }
-      else if($temp == 2){
-         $reply_message = 'โปรดใช้คำสั่งใหม่ค่ะ!';
-      }
-      else if($temp == 3){
-         $reply_message = 'ลองใหม่อีกครั้ง!';
-      }
+      
     }
    }
    else
