@@ -30,7 +30,7 @@ if ( sizeof($request_array['events']) > 0 )
     }
     else if($text == 'ดูคำสั่ง'){
       
-      $reply_message = "คำสั่งในระบบมีดีงนี้ค่ะ (ok hand)
+      $reply_message = "คำสั่งในระบบมีดีงนี้ค่ะ
       1. = ปิด : ปิดแล้ว
       2. = เปิด : เปิดแล้ว";
      }
