@@ -26,7 +26,7 @@ if ( sizeof($request_array['events']) > 0 )
        $reply_message = 'เปิดแล้วจ้า';
     }
     else if($text == 'ปิด'){
-     $reply_message = 'ปิดแล้วจ้า!';
+     $reply_message = 'ปิดแล้วจ้า';
     }
     else $reply_message = 'ขอโทษค่ะ ฉันไม่รู้จักคำสั่งนี้!';
    }
