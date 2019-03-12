@@ -29,10 +29,11 @@ if ( sizeof($request_array['events']) > 0 )
      $reply_message = 'ปิดแล้วจ้า!';
     }
     else if($text == 'ดูคำสั่ง'){
-      $reply_message = "ปิด = ปิดแล้ว";
-      $reply_message = "<br>";
-      $reply_message = "เปิด = เปิดแล้ว";
-      $reply_message = "<br>";
+      $s1 = "ปิด = ปิดแล้ว";
+      $s2 = "<br>";
+      $s3 = "เปิด = เปิดแล้ว";
+      $s4 = "<br>";
+      $reply_message = $s1.$s2.$s3.$s4;
      }
     else {
       $temp = rand(1,3);
