@@ -13,7 +13,7 @@ if ( sizeof($request_array['events']) > 0 )
 
  foreach ($request_array['events'] as $event)
  {
-  $reply_message = 'มาดิ';
+  $reply_message = '';
   $reply_token = $event['replyToken'];
 
   if ( $event['type'] == 'message' ) 
@@ -42,7 +42,23 @@ if ( sizeof($request_array['events']) > 0 )
    }
 //เลือก
    else if($text == 'ตัวเลือก'){
-      $reply_message = $event['type'];
+      $reply_message = 'เลือกคำสั่ง
+      1. ตอบ1
+      2. ตอบ2
+      3. ตอบ3
+      ';
+      while($text == '0'){
+         if ($text == '1'){
+            $reply_message = $text;
+         }
+         else if ($text == '2'){
+            $reply_message = $text;
+         }
+         else if ($text == '3'){
+            $reply_message = $text;
+         }
+         $text == '0';
+      } 
    }
 
 //
