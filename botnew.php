@@ -47,7 +47,7 @@ if ( sizeof($request_array['events']) > 0 )
       2. ตอบ2
       3. ตอบ3
       ';
-      for($i=0;$i<=5;i++){
+      for($i=0;$i<=5;$i++){
          $reply_message = $i;
       }
    }
