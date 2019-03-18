@@ -36,9 +36,9 @@ if ( sizeof($request_array['events']) > 0 )
      }
    else if($text == 'ดูปริมาณน้ำ'){
       //exปริมาณน้ำ
-      $after = 1000;
-      $befor = 500;
-      $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้คือ'.($after-$befor).'ลูกบาศก์เมตร';
+      $at = 1000;
+      $bf = 500;
+      $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้คือ'.($at-$bf).'ลูกบาศก์เมตร';
    }
    else
     else {
