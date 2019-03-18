@@ -31,8 +31,8 @@ if ( sizeof($request_array['events']) > 0 )
     else if($text == 'ดูคำสั่ง'){
       
       $reply_message = "คำสั่งในระบบมีดีงนี้ค่ะ
-      1. = ปิด : ปิดแล้ว
-      2. = เปิด : เปิดแล้ว";
+      ปิด : ปิดแล้ว
+      เปิด : เปิดแล้ว";
      }
    else if($text == 'ดูปริมาณน้ำ'){
       //exปริมาณน้ำ
@@ -54,10 +54,10 @@ if ( sizeof($request_array['events']) > 0 )
     }
    }
    else
-    $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
+    $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' 1ของคุณแล้ว';
   }
   else
-   $reply_message = 'ระบบได้รับ Event '.ucfirst($event['type']).' ของคุณแล้ว';
+   $reply_message = 'ระบบได้รับ Event '.ucfirst($event['type']).' 2ของคุณแล้ว';
  
   if( strlen($reply_message) > 0 )
   {
