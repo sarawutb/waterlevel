@@ -40,19 +40,6 @@ if ( sizeof($request_array['events']) > 0 )
       $bf = 500;
       $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้คือ'.($at-$bf).'ลูกบาศก์เมตร';
    }
-//เลือก
-   else if($text == 'ตัวเลือก'){
-      $reply_message = 'เลือกคำสั่ง
-      1. ตอบ1
-      2. ตอบ2
-      3. ตอบ3
-      ';
-      for($i=0;$i<=5;$i++){
-         $reply_message2 = $i;
-      }
-   }
-
-//
     else {
       $temp = rand(1,3);
       if($temp == 1){
@@ -77,7 +64,7 @@ if ( sizeof($request_array['events']) > 0 )
    //$reply_message = iconv("tis-620","utf-8",$reply_message);
    $data = [
     'replyToken' => $reply_token,
-    'messages' => [['type' => 'text', 'text' => $reply_message,$reply_message2]]
+    'messages' => [['type' => 'text', 'text' => $reply_message]]
    ];
    $post_body = json_encode($data,$data2, JSON_UNESCAPED_UNICODE);
 
