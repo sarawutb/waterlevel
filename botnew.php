@@ -84,7 +84,7 @@ if ( sizeof($request_array['events']) > 0 )
       'replyToken' => $reply_token,
       'messages' => [['type' => 'text', 'text' => $reply_message2]]
      ];
-   $post_body = json_encode($data,$data, JSON_UNESCAPED_UNICODE);
+   $post_body = json_encode($data,$data2, JSON_UNESCAPED_UNICODE);
 
    $send_result = send_reply_message($API_URL, $POST_HEADER, $post_body);
    echo "Result: ".$send_result."\r\n";
