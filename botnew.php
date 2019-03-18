@@ -38,7 +38,7 @@ if ( sizeof($request_array['events']) > 0 )
       //exปริมาณน้ำ
       $after = 1000;
       $befor = 500;
-      $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้คือ'.($a-$b).'ลูกบาศก์เมตร';
+      $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้คือ'.($after-$befor).'ลูกบาศก์เมตร';
    }
    else
     else {
