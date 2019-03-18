@@ -47,18 +47,9 @@ if ( sizeof($request_array['events']) > 0 )
       2. ตอบ2
       3. ตอบ3
       ';
-      while($text == '0'){
-         if ($text == '1'){
-            $reply_message = $text;
-         }
-         else if ($text == '2'){
-            $reply_message = $text;
-         }
-         else if ($text == '3'){
-            $reply_message = $text;
-         }
-         $text == '99';
-      } 
+      for($i=0;$i<=5;i++){
+         $reply_message = $i;
+      }
    }
 
 //
