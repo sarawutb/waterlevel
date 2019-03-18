@@ -40,7 +40,27 @@ if ( sizeof($request_array['events']) > 0 )
       $bf = 500;
       $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้คือ'.($at-$bf).'ลูกบาศก์เมตร';
    }
-   //else(){}
+//เลือก
+   else($text == 'ตัวเลือก'){
+      $reply_message = 'เลือกคำสั่ง
+      1. ตอบ1
+      2. ตอบ2
+      3. ตอบ3
+      ';
+      if( $event['message']['type'] == 'text' ){
+         if ($text == '1'){
+            $reply_message = $text;
+         }
+         else if ($text == '2'){
+            $reply_message = $text;
+         }
+         else if ($text == '3'){
+            $reply_message = $text;
+         }
+      } 
+   }
+
+//
     else {
       $temp = rand(1,3);
       if($temp == 1){
