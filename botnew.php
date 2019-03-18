@@ -48,7 +48,7 @@ if ( sizeof($request_array['events']) > 0 )
       3. ตอบ3
       ';
       for($i=0;$i<=5;$i++){
-         $reply_message = $i;
+         $reply_message2 = $i;
       }
    }
 
@@ -79,7 +79,12 @@ if ( sizeof($request_array['events']) > 0 )
     'replyToken' => $reply_token,
     'messages' => [['type' => 'text', 'text' => $reply_message]]
    ];
-   $post_body = json_encode($data, JSON_UNESCAPED_UNICODE);
+   //test
+   $data2 = [
+      'replyToken' => $reply_token,
+      'messages' => [['type' => 'text', 'text' => $reply_message2]]
+     ];
+   $post_body = json_encode($data,$data, JSON_UNESCAPED_UNICODE);
 
    $send_result = send_reply_message($API_URL, $POST_HEADER, $post_body);
    echo "Result: ".$send_result."\r\n";
