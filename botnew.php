@@ -40,7 +40,7 @@ if ( sizeof($request_array['events']) > 0 )
       $bf = 500;
       $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้คือ'.($at-$bf).'ลูกบาศก์เมตร';
    }
-   else
+   //else(){}
     else {
       $temp = rand(1,3);
       if($temp == 1){
