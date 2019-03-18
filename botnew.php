@@ -37,7 +37,7 @@ if ( sizeof($request_array['events']) > 0 )
    else if($text == 'ดูปริมาณน้ำ'){
       $a = 500;
       $b = 1000;
-      $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้ = '.($b-$a).'ลูกบาศก์เมตร';
+      $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้ : '.($b-$a).'ลูกบาศก์เมตร';
    }
     else {
       $temp = rand(1,3);
