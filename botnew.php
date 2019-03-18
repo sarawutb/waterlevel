@@ -57,7 +57,7 @@ if ( sizeof($request_array['events']) > 0 )
          else if ($text == '3'){
             $reply_message = $text;
          }
-         $text == '0';
+         $text == '99';
       } 
    }
 
