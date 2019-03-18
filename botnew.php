@@ -41,7 +41,7 @@ if ( sizeof($request_array['events']) > 0 )
       $reply_message = 'ปริมาณน้ำที่ใช้ไปของวันนี้คือ'.($at-$bf).'ลูกบาศก์เมตร';
    }
 //เลือก
-   else($text == 'ตัวเลือก'){
+   else if($text == 'ตัวเลือก'){
       $reply_message = 'เลือกคำสั่ง
       1. ตอบ1
       2. ตอบ2
