@@ -42,7 +42,7 @@ if ( sizeof($request_array['events']) > 0 )
    }
 //เลือก
    else if($text == 'ตัวเลือก'){
-      $reply_message = $event['message']['type'];    
+      $reply_message = $event['type'];
    }
 
 //
