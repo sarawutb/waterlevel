@@ -77,13 +77,8 @@ if ( sizeof($request_array['events']) > 0 )
    //$reply_message = iconv("tis-620","utf-8",$reply_message);
    $data = [
     'replyToken' => $reply_token,
-    'messages' => [['type' => 'text', 'text' => $reply_message]]
+    'messages' => [['type' => 'text', 'text' => $reply_message,$reply_message2]]
    ];
-   //test
-   $data2 = [
-      'replyToken' => $reply_token,
-      'messages' => [['type' => 'text', 'text' => $reply_message2]]
-     ];
    $post_body = json_encode($data,$data2, JSON_UNESCAPED_UNICODE);
 
    $send_result = send_reply_message($API_URL, $POST_HEADER, $post_body);
